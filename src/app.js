@@ -23,6 +23,13 @@ hbs.registerPartials(partialspath)
 //setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
+app.get('/help', (req,res) => {
+    res.render('help', {
+        message: 'You seriously dont know how to use a textbox and button?',
+        title: 'Help',
+        name: 'Navanga'
+    })
+})
 
 app.get('/location', (req, res) => {
     if(!req.query.postCode) {
