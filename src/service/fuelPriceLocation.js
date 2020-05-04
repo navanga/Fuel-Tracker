@@ -14,7 +14,7 @@ const fuelPrices = (access_token, postCode, callback) => {
             'Content-Type': 'application/json; charset=utf-8',
             'transactionid': '1'
         },
-        body: JSON.stringify({ "fueltype": "P95", "namedlocation": postCode, "sortby": "price", "sortascending": "true" })
+        body: JSON.stringify({ "fueltype": "E10", "namedlocation": postCode, "sortby": "price", "sortascending": "true" })
 
     };
 
